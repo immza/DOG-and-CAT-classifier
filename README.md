@@ -7,6 +7,9 @@ Key Steps in the Project:
 
 Data Loading: The images are loaded from a directory structure where each subdirectory represents a class (e.g., dogs and cats). The dataset is divided into training and validation sets.
 
+![Model Architecture](images\1.png)
+
+
 Data Preprocessing: Image pixel values are normalized to the range [0, 1] by dividing by 255.
 The images are resized to (256, 256) pixels for consistency.
 
