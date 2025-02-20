@@ -37,7 +37,7 @@ Loss Progression: The training loss significantly decreased from 2.48 in epoch 1
 The validation loss, however, did not decrease as expected. It started at 0.7568 in epoch 1, improved to 0.4465 in epoch 5, but then increased to 0.7801 in epoch 10.
 
 Cat vs Dog Detection: Cat is labelled as 0 as it is the first class and Dog is labelled as 1 being the second class.
-![Results](images/result_cat.png)
+![Results](images/cat_result.png)
 The image above shows array([[0.]] in result where 0 stands for the Cat Class.
 
 ![Results](images/result_dog.png)
