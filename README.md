@@ -7,16 +7,17 @@ Key Steps in the Project:
 
 Data Loading: The images are loaded from a directory structure where each subdirectory represents a class (e.g., dogs and cats). The dataset is divided into training and validation sets.
 
-![Data Summary](images\data summary.png)
-
+![Data](images\kaggle_dataset.png)
 
 Data Preprocessing: Image pixel values are normalized to the range [0, 1] by dividing by 255.
 The images are resized to (256, 256) pixels for consistency.
 
 CNN Architecture: A simple yet effective Convolutional Neural Network (CNN) is built using multiple convolutional layers for feature extraction, max-pooling layers for dimensionality reduction, and dense layers for classification. Batch Normalization and Dropout are used to improve training speed and prevent overfitting.
+![cnn architecture](images\cnn_structure.png)
 
 Model Compilation: The model is compiled with the Adam optimizer and binary crossentropy loss function, suitable for binary classification tasks.
 
+![Data Summary](images\data_summary.png)
 Model Training: The model is trained for 10 epochs, and performance is monitored using validation data.
 
 Technologies Used:
@@ -24,12 +25,23 @@ TensorFlow and Keras for deep learning model development.
 Python for programming and model implementation.                                                                                                                                                                              
 Model Training Results:
 The model was trained for 10 epochs, and here are the key observations from the training process:
+![epochs](images\epochs.png)
 
 Accuracy Progression:
 The training accuracy started at 56.28% in the first epoch and gradually increased to 96.87% by the tenth epoch. The validation accuracy fluctuated but peaked at 80.94% in epoch 9, settling at 77.10% in the final epoch.
 
+![Results](images\graph1.png)
+![Results](images\graph2.png)
+
 Loss Progression: The training loss significantly decreased from 2.48 in epoch 1 to 0.0852 in epoch 10, indicating the model was learning effectively.
 The validation loss, however, did not decrease as expected. It started at 0.7568 in epoch 1, improved to 0.4465 in epoch 5, but then increased to 0.7801 in epoch 10.
+
+Cat vs Dog Detection: Cat is labelled as 0 as it is the first class and Dog is labelled as 1 being the second class.
+![Results](images\result_cat.png)
+The image above shows array([[0.]] in result where 0 stands for the Cat Class.
+
+![Results](images\result_dog.png)
+The image above shows array([[1.]] in result where 1 stands for the Dog Class.
 
 Key Takeaways:
 The model learned well on the training dataset, achieving high accuracy.
